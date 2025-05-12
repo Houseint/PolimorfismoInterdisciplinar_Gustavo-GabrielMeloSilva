@@ -1,9 +1,11 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class  Main{
     public static void main (String[]Args){
         defVM vm = new defVM();
         Scanner Scanner = new Scanner(System.in);
+        ArrayList<Float> velocidades = new ArrayList<>();
         int op;
         float v;
         
@@ -18,9 +20,10 @@ public class  Main{
                     int escolha;
                     System.out.println("1-Defição de velocidade média");
                     System.out.println("2-Calcular velocidade média");
+                    System.out.println("3-Listar velocidades armazenadas");
                     escolha = Scanner.nextInt();
                     
-                    while(escolha != 1 && escolha != 2){
+                    while(escolha != 1 && escolha != 2 && escolha != 3){
                         System.out.println("Opção inválida. Escolha 1 ou 2.");
                         escolha = Scanner.nextInt();
                     }
@@ -29,17 +32,28 @@ public class  Main{
                     }
                      if (escolha == 2) {
                     System.out.println(" Velocidade média");
-                    System.out.println("Digite a distância percorrida:");
+                    System.out.println("Digite a distância percorrida(km):");
                     float d= Scanner.nextFloat();
                     Scanner.nextLine();
-                    System.out.println("Digite o tempo gasto:");
+                    System.out.println("Digite o tempo gasto(horas):");
                     float t= Scanner.nextFloat();
                     Scanner.nextLine();
                     vm.setDistancia(d);
                     vm.setTempo(t);
                     v  = vm.formula();
-                    System.out.println("A velocidade média é: " + v);
-                    }    
+                    velocidades.add(v);
+                    System.out.println("A velocidade média é: " + v+"m/s");
+                    }
+                     if (escolha == 3) {
+                        if (velocidades.isEmpty()) {
+                            System.out.println("Nenhuma velocidade armazenada.");
+                        } else {
+                            System.out.println("Velocidades armazenadas: ");
+                            for (float velocidade : velocidades) {
+                                System.out.println(velocidade + " m/s");
+                            }
+                        }
+                     }
                 break;
 
                 case 2:
@@ -51,7 +65,6 @@ public class  Main{
             }
         } while(op != 3);
         Scanner.close();
-
     }
 }
 
