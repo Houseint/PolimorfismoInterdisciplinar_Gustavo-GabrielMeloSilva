@@ -3,11 +3,11 @@ public abstract class Cartografia{
     private float dMapa;
     private float dterreno;//definindo os tipos de variaveis
 
-    public float getEscala(){
-        return e;
+    public float getTerreno(){
+        return dterreno;
     }
-    public void setEscala(float e){
-        this.e = e;
+    public void setEscala(float dterreno){
+        this.dterreno = dterreno;
     }
     public float getDistanciaMapa(){
         return dMapa;
