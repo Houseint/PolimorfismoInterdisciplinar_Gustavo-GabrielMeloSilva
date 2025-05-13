@@ -15,7 +15,7 @@ public abstract class Cartografia{
     public void setDistanciaMapa(float dMapa){
         this.dMapa = dMapa;
     }
-    public abstract void def();
+    public abstract void defCart();
     public abstract float escala();
 }
 
