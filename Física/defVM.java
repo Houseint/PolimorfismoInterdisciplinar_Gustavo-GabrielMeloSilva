@@ -3,12 +3,12 @@ public class defVM extends MU {
     public defVM(){}
     @Override
     public void defVM(){
-        System.out.println("A velocidade média é uma grandeza que mede a rapidez da deslocação de um corpo num determinado intervalo de tempo médio. Ela é definida como a razão entre o deslocamento e o intervalo de tempo em que acontece algum movimento.");
+        System.out.println("A velocidade uniforme é quando um objeto se desloca mantendo sempre o mesmo valor de velocidade, ou seja, sem acelerar nem desacelerar.");
     }
         @Override
     public float formula(){
-        return getDistancia()/getTempo();
-        
+        float S = getPInicial() + getVMovel() * getTempo();
+        return S;
     }
 }
 

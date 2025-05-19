@@ -1,23 +1,32 @@
 package Física;
 public abstract class MU{
+    private float S;
+    private float Si;
     private float v;
-    private float d;
     private float t;
     
 
-    public float getVelocidade(){
+    public float getPFInal(){
+        return S;
+    }
+    public void setPFinal(float S){
+        this.S = S;
+    }
+
+    public float getPInicial(){
+        return Si;
+    }
+
+    public void setPInicial(float Si){
+        this.Si = Si;
+    }
+
+    public float getVMovel(){
         return v;
     }
-    public void setVelocidade(float v){
+
+    public void setVMovel(float v){
         this.v = v;
-    }
-
-    public float getDistancia(){
-        return d;
-    }
-
-    public void setDistancia(float d){
-        this.d = d;
     }
 
     public float getTempo(){
@@ -29,5 +38,10 @@ public abstract class MU{
     }
     
     public abstract void defVM(); 
-    public abstract float formula(); 
+    public abstract 
+    
+    
+    
+    
+    float formula(); 
 }
