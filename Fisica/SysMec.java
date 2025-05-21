@@ -1,7 +1,13 @@
-package Física;
+package Fisica;
 
 public class SysMec extends MU {
     public SysMec(){}
+    @Override
+    public void defVM(){
+        System.out.println("Uma máquina CNC de corte a laser é equipada com um sistema de controle numérico computadorizado (CNC)");
+        System.out.println("Utiliza um feixe de luz focado para cortar ou gravar materiais com precisão");
+        System.out.println("O corte a laser CNC é usado para cortar metal com alta precisão.");
+    }
     @Override
     public float formula(){
         float S;

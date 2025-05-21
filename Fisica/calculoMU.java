@@ -1,5 +1,4 @@
-package Física;
-
+package Fisica;
 public class calculoMU extends MU {
     public calculoMU(){}
     @Override
@@ -11,7 +10,9 @@ public class calculoMU extends MU {
         float v = getVMovel();
         System.out.println("Digite o tempo: ");
         float t = getTempo();
-
+        float S=Si+v*t;
+        System.out.println("Após "+t+"segundos/horas, o carro vai estar a"+S+"metros/km do ponto de partida!");
+        return S;
         
     }
     @Override

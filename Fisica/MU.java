@@ -1,4 +1,4 @@
-package Física;
+package Fisica;
 public abstract class MU{
     private float S;
     private float Si;
