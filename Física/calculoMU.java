@@ -9,7 +9,7 @@ public class calculoMU extends MU {
         float Si = getPInicial();
         System.out.println("Digite a velocidade (m/s): ");
         float v = getVMovel();
-        System.out.println("Digite o tempo do bagulho: ");
+        System.out.println("Digite o tempo: ");
         float t = getTempo();
 
         

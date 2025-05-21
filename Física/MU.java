@@ -38,10 +38,5 @@ public abstract class MU{
     }
     
     public abstract void defVM(); 
-    public abstract 
-    
-    
-    
-    
-    float formula(); 
+    public abstract float formula(); 
 }
