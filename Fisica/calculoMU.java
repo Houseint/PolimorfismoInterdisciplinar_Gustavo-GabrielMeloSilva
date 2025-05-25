@@ -1,17 +1,22 @@
 package Fisica;
+import java.util.Scanner;
 public class calculoMU extends MU {
     public calculoMU(){}
+    private static final Scanner Scanner = new Scanner(System.in);
     @Override
     public float formula(){
         System.out.println("Calcule o Movimento Uniforme de um carro: ");
         System.out.println("Digite a posição inicial do carro:");
-        float Si = getPInicial();
+        float Si =Scanner.nextFloat();
+        setPInicial(Si);
         System.out.println("Digite a velocidade (m/s): ");
-        float v = getVMovel();
+        float v = Scanner.nextFloat();
+        setVMovel(v);
         System.out.println("Digite o tempo: ");
-        float t = getTempo();
-        float S=Si+v*t;
-        System.out.println("Após "+t+"segundos/horas, o carro vai estar a"+S+"metros/km do ponto de partida!");
+        float t = Scanner.nextFloat();
+        setTempo(t);
+        float S= getPInicial() + getVMovel() * getTempo();
+        System.out.println("Após "+t+" segundos/horas, o carro vai estar a "+S+" metros/km do ponto de partida!");
         return S;
         
     }
