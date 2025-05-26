@@ -3,8 +3,10 @@ package Geo;
 import java.util.Scanner;
 
 public class calculo extends Cartografia {
+    private int dMapa;
+    private int dTerreno;
     @Override
-    public int calculo(int dMapa, int dTerreno){
+    public int calculo(){
         return dTerreno/dMapa;
     }
     @Override
@@ -25,7 +27,7 @@ public class calculo extends Cartografia {
         System.out.println("Digite a distância representada no terreno real:");
         int dTerreno = scanner.nextInt();
         System.out.println("A escala cartográfica, segundo os dados calculados é:");
-        int resultado = calculo(dMapa, dTerreno);
+        int resultado = calculo();
         System.out.println("1:"+resultado);
     }
 }

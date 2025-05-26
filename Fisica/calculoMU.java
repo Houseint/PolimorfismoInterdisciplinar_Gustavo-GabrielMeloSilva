@@ -5,14 +5,14 @@ public class calculoMU extends MU {
     private static final Scanner Scanner = new Scanner(System.in);
     @Override
     public float formula(){
-        System.out.println("Calcule o Movimento Uniforme de um carro: ");
-        System.out.println("Digite a posição inicial do carro:");
+        System.out.println("Calcule o Movimento Uniforme de um carro. ");
+        System.out.println("Digite a posição inicial do carro em metros:");
         float Si =Scanner.nextFloat();
         setPInicial(Si);
         System.out.println("Digite a velocidade (m/s): ");
         float v = Scanner.nextFloat();
         setVMovel(v);
-        System.out.println("Digite o tempo: ");
+        System.out.println("Digite o tempo(segundos ou horas): ");
         float t = Scanner.nextFloat();
         setTempo(t);
         float S= getPInicial() + getVMovel() * getTempo();
