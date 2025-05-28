@@ -28,7 +28,7 @@ public class IMC extends Porcentagem {
             System.out.println("Você está com obesidade grau 3 (obesidade mórbida).");
         }
         System.out.println("\nFazendo agora a comparação com o peso ideal. Tomando como base 22 com o IMC ideal.");
-        pesoIdeal = (resultado - 22/22)*100;
+        pesoIdeal = ((resultado-22)/22)*100;
         if (pesoIdeal >=18.5 && pesoIdeal < 24.9){
             System.out.println("Você está dentro do IMC ideal.");
         }else{

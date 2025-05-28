@@ -1,8 +1,6 @@
 package Geo;
 
 public class defCart extends Cartografia {
-    private int dTerreno;
-    private int dMapa;
     @Override
     public void interacaoCart(){
         System.out.println("==========================================================================================");
@@ -20,6 +18,6 @@ public class defCart extends Cartografia {
     }
     @Override
     public int calculo(){
-        return dTerreno/dMapa;
+        return getdMapa()/getdTerreno();
     }
 }
