@@ -8,11 +8,15 @@ public class Main {
     public static void main(String[] Args) {
         calculoMU calculoMU = new calculoMU();
         definicaoVM definicaoVM = new definicaoVM();
+        defCart defCart = new defCart();
         SysMec sysMec = new SysMec();
-        calculo calculo = new calculo();
+        calculoCart calculoCart = new calculoCart();
+        BonusSalario BonusSalario = new BonusSalario();
+        Quiz Quiz = new Quiz();
         Scanner Scanner = new Scanner(System.in);
         ArrayList<Float> resultadosMU = new ArrayList<>();
         ArrayList<Float> resultadosSysMec = new ArrayList<>();
+        ArrayList<Integer> resultadoEscala = new ArrayList<>();
         int op;
 
         do {
@@ -85,10 +89,35 @@ public class Main {
 
                 case 2:
                     System.out.println("🌍 - - - Você escolheu a matéria de GEOGRAFIA - - - 🌍");
-                    calculo.interacaoCart();
+                    System.out.println("Escolha as seguintes opções:");
+                    System.out.println("1 - O que é Cartografia?");
+                    System.out.println("2 - Cálculo de escala");
+                    System.out.println("3 - Quiz sobre Cartografia");
+                    while (true) {
+                        while (!Scanner.hasNextInt()) {
+                            System.out.println("Digite apenas números inteiros."); 
+                            Scanner.next();
+                        }
+                        op = Scanner.nextInt();
+                        Scanner.nextLine();
+                        if (op == 1 || op == 2 || op == 3) {
+                            break;
+                        } else {
+                            System.out.println("Escolha uma opção válida entre 1, 2 e 3");
+                        }
+                    }
+                    if (op == 1) {
+                        defCart.interacaoCart();
+                    }
+                    if (op == 2) {
+                        calculoCart.interacaoCart();
+                    }
+                    if (op == 3) {
+                        Quiz.interacaoCart();
+                    }
                     break;
                 case 3:
-                    BonusSalario.BonusSalario();
+                    BonusSalario.calcularPorcentagem();
                     break;
                 case 4:
                     System.out.println("Resultados dos cálculos de Movimento Uniforme:");
@@ -105,6 +134,14 @@ public class Main {
                     } else {
                         for (int i = 0; i < resultadosSysMec.size(); i++) {
                             System.out.println((i + 1) + ": " + resultadosSysMec.get(i));
+                        }
+                    }
+                    System.out.println("Resultados dos cálculos de escala - CARTOGRAFIA");
+                    if (resultadoEscala.isEmpty()) {
+                        System.out.println("Nenhum resultado salvo ainda.");
+                    } else {
+                        for (int i = 0; i < resultadoEscala.size(); i++) {
+                            System.out.println((i + 1) + ": " + resultadoEscala.get(i));
                         }
                     }
                     break;

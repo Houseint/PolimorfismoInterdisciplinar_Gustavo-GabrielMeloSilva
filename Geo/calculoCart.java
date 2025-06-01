@@ -2,7 +2,8 @@ package Geo;
 
 import java.util.Scanner;
 
-public class calculo extends Cartografia {
+public class calculoCart extends Cartografia {
+    public calculoCart(){};
     @Override
     public int calculo(){
         return getdTerreno()/getdMapa();
