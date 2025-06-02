@@ -1,8 +1,9 @@
 package Geo;
-
+//metodos abstratos & get e set
 public abstract class Cartografia{
     private int dMapa;
     private int dTerreno;
+    private  int resultado;
 
     public int getdMapa(){
         return dMapa;
@@ -18,6 +19,13 @@ public abstract class Cartografia{
 
     public void setdTerreno(int dTerreno){
         this.dTerreno = dTerreno;
+    }
+
+    public int getResultado(){
+        return resultado;
+    }
+    public void setResultado(int resultado){
+        this.resultado = resultado;
     }
 
     public abstract void interacaoCart();

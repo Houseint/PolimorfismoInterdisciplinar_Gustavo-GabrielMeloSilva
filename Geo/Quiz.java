@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Quiz extends Cartografia {
     @Override
     public void interacaoCart() {
+        // Interação do usuário com o quiz de cartografia
         Scanner scanner = new Scanner(System.in);
         System.out.println("==========================================================================================");
         System.out.println("                         📖 - - - Quiz de Cartografia - - - 💡                           ");
@@ -15,21 +16,21 @@ public class Quiz extends Cartografia {
         System.out.println("b) Teodolito");
         System.out.println("c) GPS");
         System.out.println("d) Altímetro");
-        String pergunta1 = scanner.nextLine();
+        String pergunta1 = scanner.nextLine().trim();
         //Pergunta 2
         System.out.println("2) Qual é o maior continente em extensão territorial?");
         System.out.println("a) Ásia");
         System.out.println("b) Europa");
         System.out.println("c) África");
         System.out.println("d) América");
-        String pergunta2 = scanner.nextLine();
+        String pergunta2 = scanner.nextLine().trim();
         //Pergunta 3
         System.out.println("3) O que determina coordenadas geográficas com precisão?");
         System.out.println("a) Curvímetro");
         System.out.println("b) Drones");
         System.out.println("c) GPS");
         System.out.println("d) Pauzinhos");
-        String pergunta3 = scanner.nextLine();
+        String pergunta3 = scanner.nextLine().trim();
         //Resposta 1
         System.out.println("Pergunta 1:");
         if (pergunta1.equalsIgnoreCase("d")) {
@@ -60,7 +61,6 @@ public class Quiz extends Cartografia {
             System.out.println("A resposta correta seria a alternativa:");
             System.out.println("c) GPS");
         }
-
    }
     @Override
     public int calculo(){

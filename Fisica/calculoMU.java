@@ -5,6 +5,7 @@ public class calculoMU extends MU {
     private static final Scanner Scanner = new Scanner(System.in);
     @Override
     public float formula(){
+        //exemplo de movimento uniforme
         System.out.println("Calcule o Movimento Uniforme de um carro. ");
         System.out.println("Digite a posição inicial do carro em metros:");
         float Si =Scanner.nextFloat();

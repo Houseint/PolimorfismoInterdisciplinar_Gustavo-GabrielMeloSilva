@@ -1,4 +1,5 @@
 package Fisica;
+//metodos abstratos & get e set
 public abstract class MU{
     private float S;
     private float Si;

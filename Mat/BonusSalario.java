@@ -6,6 +6,7 @@ public class BonusSalario extends Porcentagem {
     public BonusSalario(){}
     @Override
     public double calcularPorcentagem() {
+        // Cálculo do bônus salarial
         System.out.println("Digite o valor do salário em reais: ");
         double a = Scanner.nextDouble();
         setValor(a);
@@ -13,11 +14,12 @@ public class BonusSalario extends Porcentagem {
         double b = Scanner.nextDouble();
         setSegValor(b);
         double resultado = (getValor() * getSegValor()) / 100;
+        double resultadoTotal = resultado + a;
         setResultado(resultado);
         System.out.println("O valor do salário é: R$"+a);
         System.out.println("O valor do bônus é: "+b+"%");
         System.out.println("O valor do bônus salarial é: R$"+resultado);
-        System.out.println("O salário total com o bônus é: R$"+resultado+a);
+        System.out.println("O salário total com o bônus é: R$"+resultadoTotal);
         return resultado;
     }
     @Override

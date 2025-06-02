@@ -1,11 +1,11 @@
 package Mat;
 
 public  abstract class Porcentagem {
-
+//método abstrato & get e set
     private double a;
     private double b;
     private double r;
-    //Valor - Método GET e SET
+
     public double getValor(){
         return a;
     }
@@ -14,7 +14,7 @@ public  abstract class Porcentagem {
         this.a = a;
     }
 
-    //Valor final - Método GET e SET
+
     public double getSegValor(){
         return b;
     }
@@ -29,7 +29,7 @@ public  abstract class Porcentagem {
         this.r=r;
     }
 
-    //Métodos abstratos
+
     public abstract double calcularPorcentagem();
     public abstract void def();
 }

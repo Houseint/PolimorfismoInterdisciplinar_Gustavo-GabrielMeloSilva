@@ -11,6 +11,7 @@ public class SysMec extends MU {
     }
     @Override
     public float formula(){
+        //calculo de velocidade de corte a laser
         System.out.println("Máquina CNC de corte a laser!\n");
         System.out.println("Digite a velocidade de corte em mm/s: ");
         float v= Scanner.nextFloat();

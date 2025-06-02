@@ -5,11 +5,12 @@ import java.util.Scanner;
 public class calculoCart extends Cartografia {
     public calculoCart(){};
     @Override
-    public int calculo(){
-        return getdTerreno()/getdMapa();
+    public void interacaoCart(){
+        System.out.println(" ");
     }
     @Override
-    public void interacaoCart(){
+    public int calculo(){
+        //calculo de escala cartográfica
         Scanner scanner = new Scanner(System.in);
         System.out.println("🗺️ - - - Vamos calcular a escala cartográfica - - - 🗺️");
         System.out.println("Atente-se com as seguintes informações: ");
@@ -28,7 +29,9 @@ public class calculoCart extends Cartografia {
         int dTerreno = scanner.nextInt();
         setdTerreno(dTerreno);
         System.out.println("A escala cartográfica, segundo os dados calculados é:");
-        int resultado = calculo();
+        int resultado = dTerreno/dMapa;
+        setResultado(resultado);
         System.out.println("1:"+resultado);
+        return resultado;
     }
 }

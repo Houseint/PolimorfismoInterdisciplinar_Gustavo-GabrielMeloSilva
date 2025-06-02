@@ -4,7 +4,7 @@ public class definicaoPor extends Porcentagem {
     public void definicaoPor(){}
     @Override
     public double calcularPorcentagem() {
-        return 0; // Método não implementado, pois não é necessário para a definição
+        return 0;
     }
     @Override
     public void def(){
