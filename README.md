@@ -6,7 +6,7 @@ Trabalho consta com 3 matérias -> Matematica, Geografia e Fisica
                           
 Em Matematica pode-se calcular o bônus salarial(e a definição de como o cálculo é feito)
                                    Ver a definição de Porcentagem
-                                     Calcular IMC e diferença percentual(também com definiçaõ e calculo)
+                                     Calcular IMC e diferença percentual(também com definição e calculo)
 
                                      
 Em Fisica pode-se calcular a velocidade uniforme de uma máquina CNC de corte a laser
